@@ -1,0 +1,1 @@
+var ambiente=Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")??"Development";Console.WriteLine($"Ambiente: {ambiente}");Console.WriteLine("Configure variáveis e segredos no Azure App Service sem colocá-los no código.");

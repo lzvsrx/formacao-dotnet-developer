@@ -1,0 +1,1 @@
+var pedido=new Pedido(2,35m);Console.WriteLine($"Total: {pedido.Total():C}");record Pedido(int Quantidade,decimal PrecoUnitario){public decimal Total(){if(Quantidade<=0||PrecoUnitario<0)throw new ArgumentException("Pedido inválido");return Quantidade*PrecoUnitario;}}

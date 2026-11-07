@@ -1,0 +1,1 @@
+try { Console.Write("Número inteiro: "); Console.WriteLine(100/int.Parse(Console.ReadLine()!)); } catch(FormatException){Console.WriteLine("Formato inválido");}catch(DivideByZeroException){Console.WriteLine("Divisão por zero");}

@@ -1,0 +1,1 @@
+int idade=23; decimal saldo=125.50m; DateTime hoje=DateTime.Today; Console.WriteLine($"Idade: {idade}, saldo: {saldo:C}, data: {hoje:d}"); Console.WriteLine(int.TryParse("42",out var valor)?$"Convertido: {valor}":"Inválido");

@@ -1,0 +1,1 @@
+IForma[] formas=[new Circulo(3),new Retangulo(4,5)];foreach(var forma in formas)Console.WriteLine($"Área: {forma.Area():F2}");interface IForma{double Area();}record Circulo(double Raio):IForma{public double Area()=>Math.PI*Raio*Raio;}record Retangulo(double Largura,double Altura):IForma{public double Area()=>Largura*Altura;}
