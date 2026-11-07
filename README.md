@@ -17,3 +17,19 @@ Para validar todos os projetos: execute `python validar_projetos.py` na raiz (Py
 - SQL Server, MongoDB e Azure exigem configuração externa para integração real.
 - Não foram instaladas dependências NuGet nem executada compilação neste ambiente (SDK ausente).
 - .NET 11 estava em RC3 em 07/11/2026, portanto não foi adotado.
+
+## Publicar no GitHub
+
+Instale Git e GitHub CLI, abra PowerShell nesta pasta e execute:
+
+```powershell
+.\publicar-github.ps1
+```
+
+O script autentica pelo GitHub CLI, cria um repositório público na sua conta caso ainda não exista e envia os arquivos. Revise o código antes de publicar.
+
+**Escopo:** este pacote contém 15 projetos didáticos, não todas as atividades da formação. A compilação ainda não foi verificada neste ambiente.
+
+## Desafios adicionais
+
+Seis implementações adicionais em `08-Desafios-Praticos`. Consulte `DESAFIOS_IMPLEMENTADOS.md` para escopo e limitações.
