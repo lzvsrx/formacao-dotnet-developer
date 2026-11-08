@@ -1,0 +1,5 @@
+CREATE TABLE Clientes (Id INT PRIMARY KEY, Nome NVARCHAR(120) NOT NULL);
+CREATE TABLE Pedidos (Id INT PRIMARY KEY, ClienteId INT NOT NULL, Total DECIMAL(12,2) NOT NULL CHECK(Total >= 0), CONSTRAINT FK_Pedidos_Clientes FOREIGN KEY (ClienteId) REFERENCES Clientes(Id));
+CREATE INDEX IX_Pedidos_ClienteId ON Pedidos(ClienteId);
+INSERT INTO Clientes VALUES (1,N'Ana'),(2,N'Bruno'),(3,N'Carla');
+INSERT INTO Pedidos VALUES (101,1,120.00),(102,1,80.00),(103,2,50.00);

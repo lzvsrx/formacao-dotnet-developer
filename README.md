@@ -33,3 +33,7 @@ O script autentica pelo GitHub CLI, cria um repositório público na sua conta c
 ## Desafios adicionais
 
 Seis implementações adicionais em `08-Desafios-Praticos`. Consulte `DESAFIOS_IMPLEMENTADOS.md` para escopo e limitações.
+
+
+## Complementos adicionados
+Veja [NOVOS_DESAFIOS.md](NOVOS_DESAFIOS.md) para os novos desafios e instruções.
